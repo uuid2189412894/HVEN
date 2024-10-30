@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @font-face {
+      font-family: 'srserif';
+      font-display: swap;
+      src: url(./assets/SRserif.woff2) format('woff2');
+    }
+
+    body {
+      background: black;
+      color: white;
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 16pt;
+    }
+
+    a {
+      color: #7f7fff;
+    }
+
+    a.visited {
+      color: #df7fff;
+    }
+
+    input {
+      font-size: 20pt;
+    }
+
+    canvas {
+      position: absolute;
+      font-family: srserif;
+      font-variant-ligatures: discretionary-ligatures;
+      cursor: none;
+    }
+
+    #loading {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font: 16pt srserif;
+      background: black;
+      color: white;
+      z-index: 10;
+      overflow: hidden;
+    }
+
+    #t {
+      position: relative;
+      animation: h 6s infinite linear, v 3.375s infinite linear;
+    }
+
+    @keyframes h {
+
+      0%,
+      100% {
+        left: 0
+      }
+
+      50% {
+        left: calc(100% - 5em)
+      }
+    }
+
+    @keyframes v {
+
+      0%,
+      100% {
+        top: calc((100% - 1em) * 0.1)
+      }
+
+      45% {
+        top: calc(100% - 1em)
+      }
+
+      95% {
+        top: 0
+      }
+    }
+  </style>
+  <script type="module" src="./main.js" defer></script>
+</head>
+
+<body>
+  <div id="loading">
+    <span id="t">Loading...</span>
+  </div>
+  <div style="margin:auto;max-width:60em;">
+    <p style="text-align:center;font-family:srserif">We welcome <i>you</i> noble Paladin to a glorious network tomorrow. The ultimate evolution in fierce energy and freedom at your fingertips.<br>
+      <span style="margin-left:15em">&mdash; Dash Manzoarki Informatik System (1997)</span>
+    </p>
+    <p>On October 30th, 2024
+      <a href="http://pump.fun/">I was born.</a>
+      and in the stages of my life I have conquered the everpresent throne of a network tomorrow. For the 100<sup>th</sup>
+      time in a row.
+    </p>
+    <p>
+      This is thy journey of the networked few, where I travel in interstellar confinement to the noble planet of my people and the future of my new reality.
+    </p>
+    <center><input id="startButton" type="button" value="Begin The Great Journey."></center>
+    <ul>
+      <li> LOG OCT 30th, 2024. . . I am finally free.
+    </ul>
+  </div>
+</body>
+
+</html>
