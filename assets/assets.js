@@ -5,4 +5,4 @@ export var asset_huge_ship = './assets/hugeship.glb';
 export var asset_small_ship = './assets/smallship.glb';
 export var asset_explosion = './assets/explosion.jpg';
 export var asset_shockwave = ['./assets/shockwave0.png', './assets/shockwave1.png', './assets/shockwave2.png'];
-export var asset_final = './assets/Heavens1.jpg';
+export var asset_final = './assets/Heavens1.JPG';
